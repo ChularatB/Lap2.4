@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lap2</title>
+</head>
+
+<body>
+    <form action="form-echo.php" method="get">
+
+        <div>
+            <label for="username">USERNAME:</label>
+            <input type="text" id="username" name="username" placeholder="Username" pattern="[A-Z]"><br>
+        </div><br>
+
+        <div>
+            <label for="branch">สาขาวิชา:</label>
+            <select id="branch" name="Branch">
+                <option value="">--Please choose an option---</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="IDD">รหัสนักศึกษา:</label>
+            <input type="text" id="IDD" name="ID" pattern="[0-9]{2}-[0-9]{6}-[0-9]{4}-[0-9]"><br>
+        </div><br>
+
+        <div>
+            <label for="Addr">บ้านเลขที่:</label>
+            <input type="text" id="Addr" name="address" pattern="[0-9]{3}/[0-9]\s[A-Za-z0-9]+"><br>
+        </div><br>
+
+        <div>
+            <label for="goods">รหัสสินค้า 3 ตัวแรกเป็นอักขระตัวใหญ่ตามด้วยตัวเอข 2 ตัวเท่านั้น:</label>
+            <input type="text" id="goods" name="goods" pattern="[A-Z]{3}[0-9]{2}"><br>
+        </div><br>
+
+        <div>
+            <label for="THname">ชื่อไทย:</label>
+            <input type="text" id="THname" name="THname" pattern="[ก-๏\s]+" /><br>
+        </div><br>
+
+        <br>
+        <input type="submit">
+
+    </form>
+</body>
+
+</html>
